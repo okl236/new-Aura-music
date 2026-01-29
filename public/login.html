@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Music - 登录</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <a href="index.html" class="return-btn" id="return-btn">
+        <i class="fas fa-arrow-left"></i>
+        <span>返回首页</span>
+    </a>
+    <div class="auth-container">
+        <div class="glass-panel">
+            <div class="auth-header">
+                <div class="auth-title">Aura Music</div>
+                <div class="auth-subtitle">随时随地，享受音乐</div>
+            </div>
+
+            <div class="form-wrapper">
+                <!-- Login Form -->
+                <form id="login-form" class="auth-form visible">
+                    <div class="error-message" id="login-error"></div>
+                    <div class="input-group">
+                        <input type="text" id="login-username" class="input-field" placeholder="账号" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-password" class="input-field" placeholder="密码" required>
+                    </div>
+                    <button type="submit" class="submit-btn" id="login-btn">
+                        <span>登录</span>
+                    </button>
+                    <div class="toggle-text">
+                        没有账号? <span class="toggle-link" id="show-register">立即注册</span>
+                    </div>
+                </form>
+
+                <!-- Register Form -->
+                <form id="register-form" class="auth-form hidden">
+                    <div class="error-message" id="register-error"></div>
+                    <div class="input-group">
+                        <input type="text" id="register-username" class="input-field" placeholder="设置账号" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="register-password" class="input-field" placeholder="设置密码" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="register-confirm-password" class="input-field" placeholder="确认密码" required>
+                    </div>
+                    <button type="submit" class="submit-btn" id="register-btn">
+                        <span>注册</span>
+                    </button>
+                    <div class="toggle-text">
+                        已有账号? <span class="toggle-link" id="show-login">立即登录</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="modal-overlay" id="alert-modal">
+        <div class="glass-panel modal-content">
+            <h3 id="alert-title">提示</h3>
+            <p id="alert-message"></p>
+            <button class="submit-btn" id="alert-ok-btn">确定</button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
