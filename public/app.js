@@ -10,7 +10,9 @@ const barCover = document.getElementById('bar-cover');
 const immersiveCover = document.getElementById('immersive-cover');
 
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-const API_BASE = isLocal ? 'http://localhost:3000' :'https://25000c4c-7f42-499b-b7b5-013c88bf2ebe-00-22wtfgn8dukyc.sisko.replit.dev';
+const API_BASE = isLocal
+    ? 'http://localhost:3000'
+    : 'https://25000c4c-7f42-499b-b7b5-013c88bf2ebe-00-22wtfgn8dukyc.sisko.replit.dev';
 
 // State
 let currentPlaylist = [];
