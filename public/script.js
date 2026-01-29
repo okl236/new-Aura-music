@@ -1,7 +1,7 @@
 const API_BASE = window.API_BASE || (
     window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:3000'
-        : 'https://25000c4c-7f42-499b-b7b5-013c88bf2ebe-00-22wtfgn8dukyc.sisko.replit.dev'
+        : 'https://42c78fba-3049-40a4-9f7c-fb8351517ceb-00-sxs6c9q1b5c4.sisko.replit.dev'
 );
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -3561,4 +3561,5 @@ document.addEventListener('DOMContentLoaded', () => {
         return '抱歉，我还在学习中，暂时听不懂这个指令。你可以试着让我“播放周杰伦”、“暂停”或“创建歌单”。';
     }
 });
+
 
