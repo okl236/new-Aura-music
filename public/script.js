@@ -1,7 +1,7 @@
 const API_BASE = window.API_BASE || (
-    window.location.hostname === 'localhost'
+    window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:3000'
-        : 'https://modest-dana-musichoud-4f3fd488.koyeb.app/'
+        : 'https://25000c4c-7f42-499b-b7b5-013c88bf2ebe-00-22wtfgn8dukyc.sisko.replit.dev'
 );
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -3030,4 +3030,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
